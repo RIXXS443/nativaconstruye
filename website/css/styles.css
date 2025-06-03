@@ -1,0 +1,50 @@
+:root {
+  --primary-color: #8b5e3c; /* wood-like brown */
+  --secondary-color: #d2b48c; /* tan */
+  --light-color: #f5f2ed; /* light background */
+  --dark-color: #5a381e; /* dark brown */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light-color);
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  padding: 120px 0;
+}
+
+.services .card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.projects img {
+  width: 100%;
+  height: auto;
+}
+
+.testimonial {
+  background-color: var(--secondary-color);
+  color: #333;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+footer a {
+  color: #f5f2ed;
+}
