@@ -4,43 +4,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NativaConstruye</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>NativaConstruye</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Sobre nosotros</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--primary-color);">
+            <div class="container">
+                <a class="navbar-brand" href="#">NativaConstruye</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <section id="home">
-        <h2>Bienvenidos a NativaConstruye</h2>
-        <p>Somos una empresa dedicada a la construcción de proyectos de calidad.</p>
+
+    <section class="hero text-center" style="background-image: url('https://images.unsplash.com/photo-1581093588401-ec2f79e7a8f4?auto=format&fit=crop&w=1500&q=80');">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Tu espacio, nuestra herencia</h1>
+            <p class="lead">Construimos con pasión y respeto por la naturaleza y la cultura de Misiones.</p>
+        </div>
     </section>
-    <section id="about">
-        <h2>Sobre Nosotros</h2>
-        <p>NativaConstruye se especializa en obras residenciales y comerciales, ofreciendo soluciones integrales y sostenibles.</p>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Sobre nosotros</h2>
+                    <p>NativaConstruye nace en Misiones con el objetivo de preservar la herencia cultural de nuestra región mientras construimos espacios modernos y sostenibles. Nos caracterizan la confianza, la calidez y el cuidado de la naturaleza.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=800&q=60" class="img-fluid rounded" alt="Equipo de trabajo">
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="services">
-        <h2>Servicios</h2>
-        <ul>
-            <li>Diseño y planificación</li>
-            <li>Construcción de viviendas</li>
-            <li>Remodelaciones</li>
-            <li>Obras industriales</li>
-        </ul>
+
+    <section id="services" class="services py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Servicios</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Construcción</h5>
+                            <p class="card-text">Edificamos proyectos residenciales y comerciales utilizando materiales de calidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Remodelación</h5>
+                            <p class="card-text">Damos nueva vida a tus espacios existentes con técnicas modernas y un toque tradicional.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Dirección de obra</h5>
+                            <p class="card-text">Supervisamos cada etapa del proyecto para garantizar resultados excepcionales.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Diseño personalizado</h5>
+                            <p class="card-text">Creamos proyectos a la medida de tus necesidades y estilo de vida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Escríbenos a <a href="mailto:info@nativaconstruye.com">info@nativaconstruye.com</a></p>
+
+    <section id="projects" class="projects py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Proyectos recientes</h2>
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=60" class="img-fluid rounded" alt="Proyecto 1">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=60" class="img-fluid rounded" alt="Proyecto 2">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=60" class="img-fluid rounded" alt="Proyecto 3">
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
-        <p>&copy; 2025 NativaConstruye. Todos los derechos reservados.</p>
+
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Testimonios</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="testimonial">
+                        <p class="mb-0">"Quedamos encantados con la profesionalidad de NativaConstruye. Nuestro nuevo hogar refleja nuestra cultura y valores."</p>
+                        <footer class="blockquote-footer mt-2">Laura M.</footer>
+                    </div>
+                    <div class="testimonial">
+                        <p class="mb-0">"Excelente trabajo y dedicación. Recomiendo la empresa para cualquier proyecto de construcción."</p>
+                        <footer class="blockquote-footer mt-2">Carlos G.</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <form id="contact-form" class="needs-validation" novalidate>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" required>
+                        <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                        <div class="invalid-feedback">Ingrese un email válido.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="phone" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                        <div class="invalid-feedback">Ingrese su teléfono.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                        <div class="invalid-feedback">Escribe tu mensaje.</div>
+                    </div>
+                </div>
+                <div class="mt-4 text-center">
+                    <button type="submit" class="btn text-white" style="background-color: var(--primary-color);">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-4">
+        <div class="container text-center">
+            <p>&copy; <span id="year"></span> NativaConstruye - Misiones, Argentina</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="text-white text-decoration-none">Facebook</a>
+                <a href="#" class="text-white text-decoration-none">Instagram</a>
+                <a href="#" class="text-white text-decoration-none">LinkedIn</a>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
